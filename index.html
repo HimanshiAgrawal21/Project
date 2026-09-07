@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taekwondo-Dashboard</title>
+  <title>FZTA</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -21,56 +21,57 @@
         </ul>
         <button
         type="button"
-        class="nav-bar_mobile-menu"
+        class=" navbar__mobilemenu"
         aria-controls="primary-nav-list"
         aria-expanded="false"
-        aria-label="Open Menu"
-        >
+        aria-label="Open Menu">     
         <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
       </div>
     </nav>
   </header>
   <main>
-    <section class=" dark">
+    <section class="dark">
      <div class="wrapper">
-      <div class="intro middle-split">
+      <div class="intro">
         <h1 class="intro-title">FighterZone Taekwondo Academy</h1>
-        <p class="intro-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit doloremque officia amet quibusdam, quos atque? Temporibus illum sunt accusantium voluptate sit! Laboriosam expedita labore facilis doloremque et impedit laudantium natus!</p>
-        <button class="btn">Free Trial</button>
+        <p class="intro-text">Taekwondo is a Korean martial art built on discipline, speed, and precise technique, blending powerful kicks with a strong focus on self-control and respect. It's as much about building character and confidence as it is about physical skill.</p>
+        <p class="intro-text">FighterZone Taekwondo Academy brings this tradition to life with ten years of dedicated training, guided by a coach with over a decade of teaching experience. Its students have gone on to win medals at state and national level competitions.</p>
+        
+        <button type="button" class="btn intro__cta">Free Trial</button>
       </div>
-      <div class="wrapper-img">
-        <img src="images (1).jpg" alt="" decoding="async" loading="eager">
+      <div class="wrapper__img">
+        <img src="main-img.jpg" alt="Group of FighterZone trainee is practicing stances." decoding="async" loading="eager">
       </div>
      </div>
     </section>
-    <section class="constrain">
-      <h2>Our Statics</h2>
-      <div class="academy-data">
-        <div class="academy-data__card">
-         <span class="academy-data__stats">15</span>
-         <span class="academy-data__label">Years of excellence</span>
-        </div>
-        <div class="academy-data__card">
-         <span class="academy-data__stats">300</span>
-         <span class="academy-data__label">Trains everyday</span>
-        </div>
-        <div class="academy-data__card">
-         <span class="academy-data__stats">4</span>
-         <span class="academy-data__label">Weekly Classes</span>
-        </div>
-        <div class="academy-data__card">
-         <span class="academy-data__stats">40</span>
-         <span class="academy-data__label">Black Belts</span>
-        </div>
-      </div>
-    </section>
-    <section class="constrain" id="services">
+<section class="slat constrain">
+  <h2>Our Statistics</h2>
+  <dl class="academy-data">
+    <div class="academy-data__card">
+      <dt class="academy-data__label">Years of excellence</dt>
+      <dd class="academy-data__stat">15</dd>
+    </div>
+    <div class="academy-data__card">
+      <dt class="academy-data__label">Students training daily</dt>
+      <dd class="academy-data__stat">300</dd>
+    </div>
+    <div class="academy-data__card">
+      <dt class="academy-data__label">Weekly classes</dt>
+      <dd class="academy-data__stat">4</dd>
+    </div>
+    <div class="academy-data__card">
+      <dt class="academy-data__label">Black belts</dt>
+      <dd class="academy-data__stat">40</dd>
+    </div>
+  </dl>
+</section>
+    <section class=" slat constrain" id="services">
       <h2>What you learn</h2>
       <ul class="programs">
         <li class="programs__card">
-          <span class="programs-icon">
-            <i class="fa-solid fa-user-ninja"></i>
+          <span class="programs__icon">
+            <i aria-hidden="true" class="fa-solid fa-user-ninja"></i>
           </span>
           <div class="programs__content">
             <h3 class="programs__heading">Kicks and strikes</h3>
@@ -78,8 +79,8 @@
           </div>
         </li>
         <li class="programs__card">
-          <span class="programs-icon">
-            <i class="fa-regular fa-flag"></i>
+          <span class="programs__icon">
+            <i aria-hidden="true" class="fa-regular fa-flag"></i>
           </span>
           <div class="programs__content">
             <h3 class="programs__heading">Forms (Poomsae)</h3>
@@ -87,8 +88,8 @@
           </div>
         </li>
         <li class="programs__card">
-          <span class="programs-icon">
-            <i class="fa-solid fa-khanda"></i>
+          <span class="programs__icon">
+            <i  aria-hidden="true" class="fa-solid fa-khanda"></i>
           </span>
           <div class="programs__content">
             <h3 class="programs__heading">Sparring</h3>
@@ -96,8 +97,8 @@
           </div>
         </li>
         <li class="programs__card">
-          <span class="programs-icon">
-            <i class="fa-brands fa-leanpub"></i>
+          <span class="programs__icon">
+            <i  aria-hidden="true" class="fa-brands fa-leanpub"></i>
           </span>
           <div class="programs__content">
             <h3 class="programs__heading">Discipline</h3>
@@ -106,87 +107,80 @@
         </li>
       </ul>
     </section>
-    <section class="constrain" id="about-us">
+    <section class="slat constrain" id="about-us">
       <div class="about-section">
           <div class="about-section__content">
             <h2 class="about-section__heading">About Us</h2>
-            <p class="about-section__text">FighterZone Taekwondo Academy was founded in 2021, and for the past five years it has built a reputation for developing disciplined, skilled martial artists. Before starting the academy, our coach spent years teaching taekwondo in Lohagarh, Bharatpur, bringing nearly a decade of coaching experience to FighterZone since its inception. Under this experienced guidance, students at the academy have gone on to win numerous medals, ranging from state-level competitions to national championships, reflecting the academy's commitment to excellence both on and off the mat.</p>
+            <p class="about-section__text">FighterZone Taekwondo Academy was founded in 2016, and for the past ten years it has built a reputation for developing disciplined, skilled martial artists. Before starting the academy, our coach spent years teaching taekwondo in Lohagarh, Bharatpur, bringing nearly a decade of coaching experience to FighterZone since its inception. Under this experienced guidance, students at the academy have gone on to win numerous medals, ranging from state-level competitions to national championships, reflecting the academy's commitment to excellence both on and off the mat.</p>
           </div>
           <div class="about-section__img">
-            <img src="images (1).jpg" alt="" decoding="async" loading="lazy">
+            <img src="about-us.jpg" alt="A girl in taekwondo uniform practising a kick." decoding="async" loading="lazy">
           </div>
       </div>
     </section>
-    <section>
-      <div class="constrain">
+    <section class="slat constrain">
+      <div>
         <h2>View These Testimonials</h2>
         <div class="testimonial">
           <div class="testimonial__track">
             <article class="testimonial__card">
-            <p class="testimonial__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam tenetur quos amet doloremque iusto facilis recusandae rem perspiciatis mollitia asperiores quo, quas, voluptatem ut ab dolorem commodi obcaecati iure.</p>
-          <h3 class="testimonial__student">Kaleb</h3>
+            <p class="testimonial__text">Training here changed how I carry myself, on and off the mat. It's not just about the techniques — it's the discipline that seeps into everything else you do.</p>
+          <p class="testimonial__student">Kaleb</p>
           <span class="testimonial__belt">Black Belt (5th dan)</span>
           
         </article>
         <article class="testimonial__card">
-          <p class="testimonial__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam tenetur quos amet doloremque iusto facilis recusandae rem perspiciatis mollitia asperiores quo, quas, voluptatem ut ab dolorem commodi obcaecati iure.</p>
-          <h3 class="testimonial__student">peion</h3>
+          <p class="testimonial__text">I've trained under a few instructors over the years, but what stands out here is how much individual attention you get, even in a full class. Every session pushes you a little further than you thought you could go.</p>
+          <p class="testimonial__student">Peion</p>
           <span class="testimonial__belt">Black Belt (4th dan)</span>
           
         </article>
         <article class="testimonial__card">
-          <p class="testimonial__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo numquam tenetur quos amet doloremque iusto facilis recusandae rem perspiciatis mollitia asperiores quo, quas, voluptatem ut ab dolorem commodi obcaecati iure.</p>
-          <h3 class="testimonial__student">jersey</h3>
+          <p class="testimonial__text">Seven years in, and I still learn something new every week. That's rare. This academy doesn't let you plateau — there's always a sharper version of your technique waiting to be found.</p>
+          <p class="testimonial__student">Jersey</p>
           <span class="testimonial__belt">Black Belt (7th dan)</span>
           
         </article>
           </div>
-          <button class="testimonial__arrow testimonial__arrow--prev"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
-          <button class="testimonial__arrow testimonial__arrow--next"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+          <button class="testimonial__arrow testimonial__arrow--prev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></button>
+          <button class="testimonial__arrow testimonial__arrow--next" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </div>
       </div>
     </section>
-    <section class="dark" id="contact">
-      <div class="cover">
-        <h2 class="wider">Wanna Test Yourself</h2>
-        <p class="wide-text">To Improve your Flexibility, Posture, Strength and Stamina. Taekwondo is one of the best martial art to reach for. Ready to start your journey? Enroll today and take your first class free.</p>
-        <button type="button" class="btn enroll">Enroll Now</button>
+    <section class="slat dark" id="contact">
+      <div class="contact cover">
+        <h2 class="contact__heading">Ready to Test Yourself</h2>
+        <p class="contact__text">To improve your flexibility, posture, strength and stamina. taekwondo is one of the best martial arts to reach for. Ready to start your journey? Enroll today and take your first class free.</p>
+        <button type="button" class="btn contact__btn">Enroll Now</button>
       </div>
-      
-    </section >
-    <footer>
-        <div class="map">
+    </section>
+    <footer class="slat footer">
+      <div class="footer__section">
+        <div class="footer__map">
           <iframe title="FZTA location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.847676407863!2d77.4795569793457!3d27.22393179999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973a32680c8255f%3A0x35b38f49a507c99e!2sFighters%20Zone%20Taekwondo%20Academy!5e0!3m2!1sen!2sin!4v1786531279617!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
-        <div class="footer-content">
+        <div class="footer__content">
           <nav aria-label="Footer navigation">
-            <ul class="list">
-              <li> <a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#about-us">About Us</a></li>
+            <ul class="footer__list">
+              <li class="footer__listitem"><a href="#home">Home</a></li>
+              <li class="footer__listitem"><a href="#services">Services</a></li>
+              <li class="footer__listitem"><a href="#contact">Contact</a></li>
+              <li class="footer__listitem"><a href="#about-us">About Us</a></li>
             </ul>
           </nav>
-          <address class="address">
+          <address class="footer__address">
               SEC-3, Mukharji nagar, <br>
               Bharatpur, Rajasthan <br>
               321001
           </address>
         </div>
-        <div class="footer-text">
-          <p  class="nowrap">Copyright © 2026 FZTA. All rights reserved.</p>
-          <p class="opening-hours">Opening Hours - 6 to 9AM and 3 to 8PM</p>
+      </div>
+      <div class="footer__text">
+          <p  class="footer__copyright">Copyright © 2026 FZTA. All rights reserved.</p>
+          <p class="footer__hours">Opening Hours - 6 to 9AM and 3 to 8PM</p>
         </div>
+        
     </footer>
   </main>
-  <script>
-  const menuBtn = document.querySelector('.nav-bar_mobile-menu');
-  const navList = document.querySelector('.navbar__list');
-
-  menuBtn.addEventListener('click', () => {
-    const isOpen = navList.classList.toggle('is-open');
-    menuBtn.setAttribute('aria-expanded', isOpen);
-  });
-</script>
 </body>
 </html>
